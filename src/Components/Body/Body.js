@@ -7,6 +7,13 @@ const Body = () => {
     const [segmentName,setSegmentName]=useState('');
 
   const [localSchema,setLocalSchema] = useState([]);
+  const fields = [{name:"First Name", id:"first_name"},
+    {name:"Last Name", id:"last_name"},
+    {name:"Gender", id:"gender"},
+    {name:"Age", id:"age"},
+    {name:"Account Name", id:"account_name"},
+    {name:"City", id:"city"},{name:"State", id:"state"}  
+  ]
 
   const dispatch=useDispatch();
 
@@ -86,13 +93,16 @@ const Body = () => {
                         Add schema to segment 
                 </button>
                     <div id="dropDown" className="dropdown-content">
-                      {!selectedSchemaName.includes("First Name") && <div id="first_name" onClick={(e)=>{add(e)}}>First Name</div>}
-                      {!selectedSchemaName.includes("Last Name") && <div id="last_name" onClick={(e) =>{add(e)}}>Last Name</div>}
-                      {!selectedSchemaName.includes("Gender") && <div id="gender" onClick={(e) =>{add(e)}}>Gender</div>}
-                      {!selectedSchemaName.includes("Age") &&  <div id="age" onClick={(e) =>{add(e)}}>Age</div>}
-                      {!selectedSchemaName.includes("Account Name") &&  <div id="account_name" onClick={(e) =>{add(e)}}>Account Name</div>}
-                      {!selectedSchemaName.includes("City") &&  <div id="city" onClick={(e) =>{add(e)}}>City</div>}
-                      {!selectedSchemaName.includes("State") &&  <div id="state" onClick={(e) =>{add(e)}}>State</div>}
+                    {
+                      fields.map(field =>{
+                        return(
+                          <>
+                          {!selectedSchemaName.includes(field.name)&& <div id={field.id} onClick={(e)=>{add(e)}}>{field.name}</div>}
+                          </>
+                        )
+                      }
+                      )
+                    }  
                     </div>
                 </div>
         </div>
