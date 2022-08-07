@@ -1,0 +1,13 @@
+.save{
+    display: flex;
+
+}
+.save-btn{
+    border: 2px solid #000;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    margin: 20px 40px 20px 40px;
+    align-items: flex-start;
+}

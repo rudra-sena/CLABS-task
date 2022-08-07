@@ -1,0 +1,26 @@
+.modal-footer{
+    background-color: rgb(236, 236, 236);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.save-schema{
+    background-color: rgb(44, 160, 125);
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    margin: 10px 0px 10px 10px;
+}
+
+.cancel-btn{
+    background-color: #fff;
+    color: rgb(190, 22, 61);
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    margin: 10px 0px 10px 10px;
+
+}

@@ -1,0 +1,125 @@
+.modal-body{
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+h4{
+    font-size:16px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.segment-name{
+    width: 75%;
+    padding: 10px;
+    border: 1.25px solid rgb(160, 158, 158);
+}
+.traits{
+    
+    right: 0%;
+    margin: 20px;
+}
+.dot1 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(56, 222, 97);
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.dot2 {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(196, 37, 74);
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.label{
+    margin: 10px;
+}
+.selected-items{
+    border: 1.25px solid rgb(160, 158, 158);
+    padding: 12px;
+    margin-bottom: 5px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    
+  
+}
+.selected-items div{
+    width: 100%;
+}
+
+.field-name{
+  flex: 0.95;
+  align-items: center;
+}
+.remove{
+  
+  flex: 0.05;
+  font-weight: 1000;
+  font-size: 20px;
+  padding-left: 2.5%;
+  align-items: center;
+  background-color: rgb(236, 249, 250);
+  color: rgb(94, 94, 94);
+  border-radius: 3px;
+}
+
+.remove:hover{
+  cursor: pointer;
+}
+
+select:invalid { color: gray; }
+
+.dropdown-btn {
+    background-color: #fff;
+    color: rgb(110, 110, 110);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.25px solid rgb(160, 158, 158);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+  }
+  
+  .dropdown-btn:hover, .dropdown-btn:focus {
+    background-color: #ffffff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    bottom: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    
+  }
+  
+  .dropdown-content div {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content div:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255)
+  }
+  
+  
+  
+  .show {display: block;}
+
